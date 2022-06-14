@@ -9,6 +9,7 @@ import UIKit
 
 class FeedBackHSView: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var swipeUpBtn: UIButton!
     @IBOutlet weak var closeBtn: UIImageView!
     @IBOutlet weak var heightViewPopUp: NSLayoutConstraint!
@@ -22,7 +23,6 @@ class FeedBackHSView: UIViewController {
         
         let screenSize: CGRect = UIScreen.main.bounds
         self.heightFrame = screenSize.height
-        print("cek heightFrame: \(heightFrame)")
     }
     
     func setupView() {
@@ -41,6 +41,17 @@ class FeedBackHSView: UIViewController {
         
         self.popView.addGestureRecognizer(topRecognizer)
         self.popView.addGestureRecognizer(bottomRecognizer)
+        
+        tableView.register(UINib(nibName: "FeedBackHeaderCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderCell")
+        tableView.register(UINib(nibName: "FeedBackScheduleCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleCell")
+        tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.rowHeight             = UITableView.automaticDimension
+        tableView.estimatedRowHeight    = 100
+        tableView.separatorStyle    = .none
         
     }
     
@@ -97,4 +108,38 @@ class FeedBackHSView: UIViewController {
     @objc func checkAction(sender : UITapGestureRecognizer) {
         dismiss(animated: true)
     }
+}
+
+extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
+    
+   func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        }
+        else if section == 1 {
+            return 1
+        }
+        else {
+            return 1
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            return self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderCell", for: indexPath)
+        } else if indexPath.section == 1 {
+            return self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleCell", for: indexPath)
+        } else {
+            return self.tableView.dequeueReusableCell(withIdentifier: "FeedBackStarCell", for: indexPath)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+   
 }

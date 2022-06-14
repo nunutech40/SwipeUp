@@ -1,0 +1,6 @@
+framework module Pods_BU_Prodia_BU_ProdiaUITests {
+  umbrella header "Pods-BU-Prodia-BU-ProdiaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
