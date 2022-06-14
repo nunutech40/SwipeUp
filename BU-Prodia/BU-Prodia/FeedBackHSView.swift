@@ -58,7 +58,7 @@ class FeedBackHSView: UIViewController {
     }
     
     func afterSwipe(_ swipe: String) {
-        let getHeightFrame = self.heightFrame - 100
+        let getHeightFrame = self.heightFrame - 120
         
         UIView.animate(
             withDuration: 1.0,
@@ -69,7 +69,7 @@ class FeedBackHSView: UIViewController {
                     self.heightViewPopUp.constant = getHeightFrame
                     self.tableView.isScrollEnabled = true
                 } else {
-                    self.heightViewPopUp.constant = 400
+                    self.heightViewPopUp.constant = 511
                     self.tableView.isScrollEnabled = false
                 }
             },
@@ -128,13 +128,15 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.section == 0 {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderCell", for: indexPath) as! FeedBackHeaderCell
-            
+            cell.configuration()
             return cell
         } else if indexPath.section == 1 {
             let cell1 = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleCell", for: indexPath) as! FeedBackScheduleCell
+            cell1.configuration()
             return cell1
         } else {
             let cell2 = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackStarCell", for: indexPath) as! FeedBackStarCell
+            cell2.configuration()
             return cell2
         }
         

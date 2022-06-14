@@ -9,15 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="0.0" id="KGk-i7-Jjw" customClass="FeedBackStarCell" customModule="BU_Prodia" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="FeedBackStarCell" customModule="BU_Prodia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagaimana proses pengambilan darah Anda?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFU-G4-tqU">
-                        <rect key="frame" x="24.5" y="42" width="326" height="19.5"/>
+                        <rect key="frame" x="24.5" y="12" width="326" height="19.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="19.5" id="nBs-lC-D5u"/>
                         </constraints>
@@ -25,11 +25,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRw-39-WID" customClass="CosmosView" customModule="Cosmos">
-                        <rect key="frame" x="67.5" y="107.5" width="240" height="45"/>
+                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="tRw-39-WID" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="65" y="74" width="245" height="46"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="45" id="TzL-N7-NVD"/>
+                            <constraint firstAttribute="height" constant="46" id="QQn-9w-Wjp"/>
                             <constraint firstAttribute="width" secondItem="tRw-39-WID" secondAttribute="height" multiplier="16:3" id="kY3-g1-kW7"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -54,35 +54,24 @@
                             <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
                                 <color key="value" systemColor="systemBlueColor"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="Path"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="star"/>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ire-wJ-1YT">
-                        <rect key="frame" x="10" y="188.5" width="355" height="33.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="ire-wJ-1YT" secondAttribute="height" multiplier="350:33" id="fST-I9-amH"/>
-                        </constraints>
-                        <string key="text">Mohon maaf atas ketidaknyamanan pelayanan kami.
-Apa ketidaknyamanan yang dirasakan?</string>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ire-wJ-1YT" firstAttribute="top" secondItem="tRw-39-WID" secondAttribute="bottom" constant="36" id="B1I-Hf-Riw"/>
-                    <constraint firstItem="tRw-39-WID" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="EVu-1L-xt5"/>
-                    <constraint firstItem="ire-wJ-1YT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="H3Q-f1-WKR"/>
-                    <constraint firstItem="tRw-39-WID" firstAttribute="top" secondItem="qFU-G4-tqU" secondAttribute="bottom" constant="46" id="IAB-6K-2pi"/>
-                    <constraint firstAttribute="bottom" secondItem="tRw-39-WID" secondAttribute="bottom" constant="78.5" id="Qmz-TL-x62"/>
-                    <constraint firstItem="tRw-39-WID" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="107.5" id="cM2-77-ezo"/>
-                    <constraint firstItem="qFU-G4-tqU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eg2-4h-hbe"/>
+                    <constraint firstItem="tRw-39-WID" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="74" id="Bbz-er-fj1"/>
+                    <constraint firstItem="qFU-G4-tqU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Z4s-7l-jc8"/>
+                    <constraint firstAttribute="bottom" secondItem="tRw-39-WID" secondAttribute="bottom" constant="74" id="crn-Dy-J5T"/>
+                    <constraint firstItem="tRw-39-WID" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mu7-7v-olv"/>
+                    <constraint firstItem="qFU-G4-tqU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="wCv-Ki-e9Q"/>
+                    <constraint firstAttribute="bottom" secondItem="tRw-39-WID" secondAttribute="bottom" constant="4" id="zRN-4Y-pIq"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="ratingView" destination="tRw-39-WID" id="4ZY-k4-czF"/>
             </connections>
-            <point key="canvasLocation" x="138.40579710144928" y="157.03125"/>
+            <point key="canvasLocation" x="138.40579710144928" y="115.51339285714285"/>
         </tableViewCell>
     </objects>
     <designables>
@@ -91,6 +80,8 @@ Apa ketidaknyamanan yang dirasakan?</string>
         </designable>
     </designables>
     <resources>
+        <image name="Path" width="33" height="33"/>
+        <image name="star" width="33" height="33"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -13,7 +13,7 @@ class FeedBackScheduleCell: UITableViewCell {
         setupView()
     }
     
-    fun setupView() {
+    func setupView() {
         self.selectionStyle = .none
     }
     
