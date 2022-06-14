@@ -13,12 +13,15 @@ class FeedBackViewModel {
         case schedule
         case star
         case headerAdvice
+        case advice
         case action
         
         var numberOfItems: Int {
             switch self {
             case .header, .schedule, .star, .headerAdvice, .action:
                 return 1
+            case .advice:
+                return 4
             }
         }
         

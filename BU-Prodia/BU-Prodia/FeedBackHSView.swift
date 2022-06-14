@@ -47,6 +47,7 @@ class FeedBackHSView: UIViewController {
         tableView.register(UINib(nibName: "FeedBackScheduleCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleCell")
         tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
         tableView.register(UINib(nibName: "FeedBackHeaderAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderAdviceCell")
+        tableView.register(UINib(nibName: "FeedBackAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackAdviceCell")
         tableView.register(UINib(nibName: "FeedBackActionCell", bundle: nil), forCellReuseIdentifier: "FeedBackActionCell")
         
         self.tableView.delegate = self
@@ -65,11 +66,14 @@ class FeedBackHSView: UIViewController {
         sections.append(.header)
         sections.append(.schedule)
         sections.append(.star)
+        
         if swipe == "up" {
             sections.append(.headerAdvice)
+            sections.append(.advice)
         } else {
             if swipe == "down" {
                 self.sections.remove(at: 3)
+                self.sections.remove(at: 4)
             }
         }
         sections.append(.action)
@@ -166,12 +170,16 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderAdviceCell", for: indexPath) as! FeedBackHeaderAdviceCell
             cell.configuration()
             return cell
+        case .advice:
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackAdviceCell", for: indexPath) as! FeedBackAdviceCell
+            cell.configuration()
+            return cell
         case .action:
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackActionCell", for: indexPath) as! FeedBackActionCell
             cell.configuration()
             return cell
-        }
         
+        }
     }
    
 }
