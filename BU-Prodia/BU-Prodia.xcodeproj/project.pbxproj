@@ -13,6 +13,7 @@
 		04A72BC2285865330066F67C /* FeedBackScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BC0285865330066F67C /* FeedBackScheduleCell.xib */; };
 		04A72BC528586C4E0066F67C /* FeedBackStarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BC328586C4E0066F67C /* FeedBackStarCell.swift */; };
 		04A72BC628586C4E0066F67C /* FeedBackStarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BC428586C4E0066F67C /* FeedBackStarCell.xib */; };
+		04AEE8122859460800E5B94D /* FeedBackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEE8112859460800E5B94D /* FeedBackViewModel.swift */; };
 		04B478242858D28A0089575D /* FeedBackHeaderAdviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B478222858D28A0089575D /* FeedBackHeaderAdviceCell.swift */; };
 		04B478252858D28A0089575D /* FeedBackHeaderAdviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B478232858D28A0089575D /* FeedBackHeaderAdviceCell.xib */; };
 		04B478282858DB7E0089575D /* FeedBackActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B478262858DB7E0089575D /* FeedBackActionCell.swift */; };
@@ -58,6 +59,7 @@
 		04A72BC0285865330066F67C /* FeedBackScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackScheduleCell.xib; sourceTree = "<group>"; };
 		04A72BC328586C4E0066F67C /* FeedBackStarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackStarCell.swift; sourceTree = "<group>"; };
 		04A72BC428586C4E0066F67C /* FeedBackStarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackStarCell.xib; sourceTree = "<group>"; };
+		04AEE8112859460800E5B94D /* FeedBackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackViewModel.swift; sourceTree = "<group>"; };
 		04B478222858D28A0089575D /* FeedBackHeaderAdviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHeaderAdviceCell.swift; sourceTree = "<group>"; };
 		04B478232858D28A0089575D /* FeedBackHeaderAdviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackHeaderAdviceCell.xib; sourceTree = "<group>"; };
 		04B478262858DB7E0089575D /* FeedBackActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackActionCell.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				04F33EF4285739A700DBFC28 /* Info.plist */,
 				04F33F1628573C1300DBFC28 /* FeedBackHSView.swift */,
 				04F33F1728573C1300DBFC28 /* FeedBackHSView.xib */,
+				04AEE8112859460800E5B94D /* FeedBackViewModel.swift */,
 			);
 			path = "BU-Prodia";
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				04F33F1828573C1300DBFC28 /* FeedBackHSView.swift in Sources */,
 				04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */,
 				04A72BC528586C4E0066F67C /* FeedBackStarCell.swift in Sources */,
+				04AEE8122859460800E5B94D /* FeedBackViewModel.swift in Sources */,
 				04B478282858DB7E0089575D /* FeedBackActionCell.swift in Sources */,
 				04F33EE9285739A400DBFC28 /* SceneDelegate.swift in Sources */,
 			);

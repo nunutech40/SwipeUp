@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagaimana proses pengambilan darah Anda?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFU-G4-tqU">
-                        <rect key="frame" x="24.5" y="12" width="326" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagaimana proses pengambilan darah Anda?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qFU-G4-tqU">
+                        <rect key="frame" x="16" y="12" width="343" height="19.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="19.5" id="nBs-lC-D5u"/>
                         </constraints>
@@ -64,6 +64,7 @@
                     <constraint firstItem="qFU-G4-tqU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Z4s-7l-jc8"/>
                     <constraint firstAttribute="bottom" secondItem="tRw-39-WID" secondAttribute="bottom" constant="74" id="crn-Dy-J5T"/>
                     <constraint firstItem="tRw-39-WID" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mu7-7v-olv"/>
+                    <constraint firstItem="qFU-G4-tqU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="u77-yw-jdP"/>
                     <constraint firstItem="qFU-G4-tqU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="wCv-Ki-e9Q"/>
                     <constraint firstAttribute="bottom" secondItem="tRw-39-WID" secondAttribute="bottom" constant="4" id="zRN-4Y-pIq"/>
                 </constraints>

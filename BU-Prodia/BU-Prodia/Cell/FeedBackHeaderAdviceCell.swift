@@ -9,6 +9,12 @@ import UIKit
 
 class FeedBackHeaderAdviceCell: UITableViewCell {
     
+    func configuration() {
+        setupView()
+    }
     
+    func setupView() {
+        self.selectionStyle = .none
+    }
     
 }
