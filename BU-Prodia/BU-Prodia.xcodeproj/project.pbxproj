@@ -13,6 +13,10 @@
 		04A72BC2285865330066F67C /* FeedBackScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BC0285865330066F67C /* FeedBackScheduleCell.xib */; };
 		04A72BC528586C4E0066F67C /* FeedBackStarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BC328586C4E0066F67C /* FeedBackStarCell.swift */; };
 		04A72BC628586C4E0066F67C /* FeedBackStarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BC428586C4E0066F67C /* FeedBackStarCell.xib */; };
+		04B478242858D28A0089575D /* FeedBackHeaderAdviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B478222858D28A0089575D /* FeedBackHeaderAdviceCell.swift */; };
+		04B478252858D28A0089575D /* FeedBackHeaderAdviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B478232858D28A0089575D /* FeedBackHeaderAdviceCell.xib */; };
+		04B478282858DB7E0089575D /* FeedBackActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B478262858DB7E0089575D /* FeedBackActionCell.swift */; };
+		04B478292858DB7E0089575D /* FeedBackActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B478272858DB7E0089575D /* FeedBackActionCell.xib */; };
 		04F33EE7285739A400DBFC28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F33EE6285739A400DBFC28 /* AppDelegate.swift */; };
 		04F33EE9285739A400DBFC28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F33EE8285739A400DBFC28 /* SceneDelegate.swift */; };
 		04F33EEB285739A400DBFC28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F33EEA285739A400DBFC28 /* ViewController.swift */; };
@@ -54,6 +58,10 @@
 		04A72BC0285865330066F67C /* FeedBackScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackScheduleCell.xib; sourceTree = "<group>"; };
 		04A72BC328586C4E0066F67C /* FeedBackStarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackStarCell.swift; sourceTree = "<group>"; };
 		04A72BC428586C4E0066F67C /* FeedBackStarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackStarCell.xib; sourceTree = "<group>"; };
+		04B478222858D28A0089575D /* FeedBackHeaderAdviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHeaderAdviceCell.swift; sourceTree = "<group>"; };
+		04B478232858D28A0089575D /* FeedBackHeaderAdviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackHeaderAdviceCell.xib; sourceTree = "<group>"; };
+		04B478262858DB7E0089575D /* FeedBackActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackActionCell.swift; sourceTree = "<group>"; };
+		04B478272858DB7E0089575D /* FeedBackActionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackActionCell.xib; sourceTree = "<group>"; };
 		04F33EE3285739A400DBFC28 /* BU-Prodia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BU-Prodia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F33EE6285739A400DBFC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F33EE8285739A400DBFC28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +124,10 @@
 				04A72BC0285865330066F67C /* FeedBackScheduleCell.xib */,
 				04A72BC328586C4E0066F67C /* FeedBackStarCell.swift */,
 				04A72BC428586C4E0066F67C /* FeedBackStarCell.xib */,
+				04B478222858D28A0089575D /* FeedBackHeaderAdviceCell.swift */,
+				04B478232858D28A0089575D /* FeedBackHeaderAdviceCell.xib */,
+				04B478262858DB7E0089575D /* FeedBackActionCell.swift */,
+				04B478272858DB7E0089575D /* FeedBackActionCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -315,6 +327,8 @@
 				04F33EF0285739A700DBFC28 /* Assets.xcassets in Resources */,
 				04F33F1928573C1300DBFC28 /* FeedBackHSView.xib in Resources */,
 				04F33EEE285739A400DBFC28 /* Main.storyboard in Resources */,
+				04B478292858DB7E0089575D /* FeedBackActionCell.xib in Resources */,
+				04B478252858D28A0089575D /* FeedBackHeaderAdviceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,9 +459,11 @@
 				04F33EEB285739A400DBFC28 /* ViewController.swift in Sources */,
 				04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */,
 				04F33EE7285739A400DBFC28 /* AppDelegate.swift in Sources */,
+				04B478242858D28A0089575D /* FeedBackHeaderAdviceCell.swift in Sources */,
 				04F33F1828573C1300DBFC28 /* FeedBackHSView.swift in Sources */,
 				04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */,
 				04A72BC528586C4E0066F67C /* FeedBackStarCell.swift in Sources */,
+				04B478282858DB7E0089575D /* FeedBackActionCell.swift in Sources */,
 				04F33EE9285739A400DBFC28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

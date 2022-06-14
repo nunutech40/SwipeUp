@@ -20,7 +20,7 @@ class FeedBackStarCell: UITableViewCell {
         ratingView.settings.filledColor = UIColor.orange
         ratingView.settings.emptyBorderColor = UIColor.orange
         ratingView.settings.filledBorderColor = UIColor.orange
-        self.ratingView.rating = 3.5
+        self.ratingView.rating = 0
     }
     
     func setupView() {

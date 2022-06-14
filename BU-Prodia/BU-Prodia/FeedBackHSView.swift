@@ -45,6 +45,7 @@ class FeedBackHSView: UIViewController {
         tableView.register(UINib(nibName: "FeedBackHeaderCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderCell")
         tableView.register(UINib(nibName: "FeedBackScheduleCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleCell")
         tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
+        tableView.register(UINib(nibName: "FeedBackActionCell", bundle: nil), forCellReuseIdentifier: "FeedBackActionCell")
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -117,7 +118,7 @@ class FeedBackHSView: UIViewController {
 extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
     
    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -134,10 +135,14 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
             let cell1 = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleCell", for: indexPath) as! FeedBackScheduleCell
             cell1.configuration()
             return cell1
-        } else {
+        } else if indexPath.section == 2 {
             let cell2 = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackStarCell", for: indexPath) as! FeedBackStarCell
             cell2.configuration()
             return cell2
+        } else {
+            let cell3 = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackActionCell", for: indexPath) as! FeedBackActionCell
+            cell3.configuration()
+            return cell3
         }
         
     }
