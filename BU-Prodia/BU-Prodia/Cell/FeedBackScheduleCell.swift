@@ -9,6 +9,12 @@ import UIKit
 
 class FeedBackScheduleCell: UITableViewCell {
     
+    func configuration() {
+        setupView()
+    }
     
+    fun setupView() {
+        self.selectionStyle = .none
+    }
     
 }

@@ -45,6 +45,7 @@ class FeedBackHSView: UIViewController {
         tableView.register(UINib(nibName: "FeedBackHeaderCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderCell")
         tableView.register(UINib(nibName: "FeedBackScheduleCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleCell")
         tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -52,6 +53,7 @@ class FeedBackHSView: UIViewController {
         tableView.rowHeight             = UITableView.automaticDimension
         tableView.estimatedRowHeight    = 100
         tableView.separatorStyle    = .none
+        self.tableView.isScrollEnabled = false
         
     }
     
@@ -65,8 +67,10 @@ class FeedBackHSView: UIViewController {
             animations: {
                 if swipe == "up" {
                     self.heightViewPopUp.constant = getHeightFrame
+                    self.tableView.isScrollEnabled = true
                 } else {
                     self.heightViewPopUp.constant = 400
+                    self.tableView.isScrollEnabled = false
                 }
             },
             completion: nil)
@@ -117,29 +121,23 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 1
-        }
-        else if section == 1 {
-            return 1
-        }
-        else {
-            return 1
-        }
+        1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if indexPath.section == 0 {
-            return self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderCell", for: indexPath)
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderCell", for: indexPath) as! FeedBackHeaderCell
+            
+            return cell
         } else if indexPath.section == 1 {
-            return self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleCell", for: indexPath)
+            let cell1 = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleCell", for: indexPath) as! FeedBackScheduleCell
+            return cell1
         } else {
-            return self.tableView.dequeueReusableCell(withIdentifier: "FeedBackStarCell", for: indexPath)
+            let cell2 = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackStarCell", for: indexPath) as! FeedBackStarCell
+            return cell2
         }
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        
     }
    
 }

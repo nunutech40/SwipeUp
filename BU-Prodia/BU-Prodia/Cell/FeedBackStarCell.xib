@@ -43,7 +43,7 @@
                                 <color key="value" red="1" green="0.73333333329999995" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                <real key="value" value="3.5"/>
+                                <real key="value" value="3.2999999999999998"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
                                 <integer key="value" value="1"/>
@@ -74,8 +74,9 @@ Apa ketidaknyamanan yang dirasakan?</string>
                     <constraint firstItem="tRw-39-WID" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="EVu-1L-xt5"/>
                     <constraint firstItem="ire-wJ-1YT" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="H3Q-f1-WKR"/>
                     <constraint firstItem="tRw-39-WID" firstAttribute="top" secondItem="qFU-G4-tqU" secondAttribute="bottom" constant="46" id="IAB-6K-2pi"/>
+                    <constraint firstAttribute="bottom" secondItem="tRw-39-WID" secondAttribute="bottom" constant="78.5" id="Qmz-TL-x62"/>
+                    <constraint firstItem="tRw-39-WID" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="107.5" id="cM2-77-ezo"/>
                     <constraint firstItem="qFU-G4-tqU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eg2-4h-hbe"/>
-                    <constraint firstItem="qFU-G4-tqU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="42" id="snT-Ix-cmx"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -84,6 +85,11 @@ Apa ketidaknyamanan yang dirasakan?</string>
             <point key="canvasLocation" x="138.40579710144928" y="157.03125"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="tRw-39-WID">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

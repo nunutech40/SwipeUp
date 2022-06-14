@@ -196,7 +196,6 @@
 				26D0EAC9BC3324FD1475B998 /* Pods-BU-ProdiaTests.debug.xcconfig */,
 				8C1F2D5DE860F075BA52A9F3 /* Pods-BU-ProdiaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -91,9 +91,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="64x-4O-7xC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="GPB-2P-HeP"/>
-                    <constraint firstAttribute="bottom" secondItem="64x-4O-7xC" secondAttribute="bottom" constant="4" id="IbD-2N-BHH"/>
                     <constraint firstAttribute="trailing" secondItem="64x-4O-7xC" secondAttribute="trailing" constant="16" id="Sc5-At-xMB"/>
                     <constraint firstItem="64x-4O-7xC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="hs4-vO-6rW"/>
+                    <constraint firstAttribute="bottom" secondItem="64x-4O-7xC" secondAttribute="bottom" constant="4" id="q0b-T8-sMt"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="138.40579710144928" y="95.758928571428569"/>

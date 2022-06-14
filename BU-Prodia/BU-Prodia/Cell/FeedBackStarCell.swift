@@ -13,14 +13,18 @@ class FeedBackStarCell: UITableViewCell {
     @IBOutlet weak var ratingView: CosmosView!
     
     func configuration() {
+        setupView()
         self.ratingView.settings.updateOnTouch = false
         ratingView.settings.fillMode = .full
-        ratingView.settings.starSize = 30
-        ratingView.settings.starMargin = 5
+        ratingView.settings.starSize = 45
         ratingView.settings.filledColor = UIColor.orange
         ratingView.settings.emptyBorderColor = UIColor.orange
         ratingView.settings.filledBorderColor = UIColor.orange
         self.ratingView.rating = 3.4
+    }
+    
+    func setupView() {
+        self.selectionStyle = .none
     }
     
 }

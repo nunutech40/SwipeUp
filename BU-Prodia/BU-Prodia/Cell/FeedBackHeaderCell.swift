@@ -9,5 +9,8 @@ import UIKit
 
 class FeedBackHeaderCell: UITableViewCell {
     
+    func configuration() {
+        self.selectionStyle = .none
+    }
     
 }
