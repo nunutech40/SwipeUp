@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     
     @IBAction func btn2Act(_ sender: Any) {
         
+        let info = FeedBackHSRatingChatView()
+        info.modalPresentationStyle = .overCurrentContext
+        self.present(info, animated: true)
+        
     }
 }
 

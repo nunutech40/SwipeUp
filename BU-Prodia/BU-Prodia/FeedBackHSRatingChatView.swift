@@ -1,20 +1,20 @@
 //
-//  FeedBackHSView.swift
+//  FeedBackHSRatingChatView.swift
 //  BU-Prodia
 //
-//  Created by mac on 13/6/22.
+//  Created by mac on 15/6/22.
 //
 
 import UIKit
 
-class FeedBackHSView: UIViewController {
-    
+class FeedBackHSRatingChatView: UIViewController {
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var swipeUpBtn: UIButton!
     @IBOutlet weak var heightViewPopUp: NSLayoutConstraint!
     @IBOutlet weak var popView: UIView!
     private var heightFrame = 0.0
-    private var sections = [FeedBackViewModel.Section]()
+    private var sections = [FeedBackRatingChatViewModel.Section]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class FeedBackHSView: UIViewController {
         self.popView.addGestureRecognizer(bottomRecognizer)
         
         tableView.register(UINib(nibName: "FeedBackHeaderCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderCell")
-        tableView.register(UINib(nibName: "FeedBackScheduleCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleCell")
+        tableView.register(UINib(nibName: "FeedBackScheduleChatCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleChatCell")
         tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
         tableView.register(UINib(nibName: "FeedBackHeaderAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderAdviceCell")
         tableView.register(UINib(nibName: "FeedBackAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackAdviceCell")
@@ -60,7 +60,7 @@ class FeedBackHSView: UIViewController {
     }
     
     private func configureDisplayData(swipe: String) {
-        var sections = [FeedBackViewModel.Section]()
+        var sections = [FeedBackRatingChatViewModel.Section]()
         sections.append(.header)
         sections.append(.schedule)
         sections.append(.star)
@@ -71,8 +71,10 @@ class FeedBackHSView: UIViewController {
             sections.append(.message)
         } else {
             if swipe == "down" {
-                self.sections.remove(at: 3)
-                self.sections.remove(at: 4)
+                if self.sections.count > 4 {
+                    self.sections.remove(at: 3)
+                    self.sections.remove(at: 4)
+                }
             }
         }
         sections.append(.action)
@@ -140,7 +142,7 @@ class FeedBackHSView: UIViewController {
     }
 }
 
-extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
+extension FeedBackHSRatingChatView: UITableViewDelegate, UITableViewDataSource {
     
    func numberOfSections(in tableView: UITableView) -> Int {
        return self.sections.count
@@ -159,7 +161,7 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
             cell.configuration()
             return cell
         case .schedule:
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleCell", for: indexPath) as! FeedBackScheduleCell
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleChatCell", for: indexPath) as! FeedBackScheduleChatCell
             cell.configuration()
             return cell
         case .star:
@@ -186,4 +188,5 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+
 }

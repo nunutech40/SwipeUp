@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class FeedBackRatingChatViewModel {
+class FeedBackViewModel {
     
     enum Section {
         case header

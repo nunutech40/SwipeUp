@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		048FDFD828596DB1001C7452 /* FeedBackMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFD628596DB1001C7452 /* FeedBackMessageCell.swift */; };
 		048FDFD928596DB1001C7452 /* FeedBackMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFD728596DB1001C7452 /* FeedBackMessageCell.xib */; };
+		048FDFDC28597871001C7452 /* FeedBackHSRatingChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFDA28597871001C7452 /* FeedBackHSRatingChatView.swift */; };
+		048FDFDF285978F5001C7452 /* FeedBackHSRatingChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFDE285978F5001C7452 /* FeedBackHSRatingChatView.xib */; };
+		048FDFE1285979D6001C7452 /* FeedBackRatingChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFE0285979D6001C7452 /* FeedBackRatingChatViewModel.swift */; };
+		048FDFE428597D75001C7452 /* FeedBackScheduleChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFE228597D75001C7452 /* FeedBackScheduleChatCell.xib */; };
+		048FDFE528597D75001C7452 /* FeedBackScheduleChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFE328597D75001C7452 /* FeedBackScheduleChatCell.swift */; };
 		04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */; };
 		04A72BBE28584CF70066F67C /* FeedBackHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */; };
 		04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */; };
@@ -59,6 +64,11 @@
 		042342732F0639E54455ECE6 /* Pods-BU-Prodia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU-Prodia.debug.xcconfig"; path = "Target Support Files/Pods-BU-Prodia/Pods-BU-Prodia.debug.xcconfig"; sourceTree = "<group>"; };
 		048FDFD628596DB1001C7452 /* FeedBackMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackMessageCell.swift; sourceTree = "<group>"; };
 		048FDFD728596DB1001C7452 /* FeedBackMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackMessageCell.xib; sourceTree = "<group>"; };
+		048FDFDA28597871001C7452 /* FeedBackHSRatingChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHSRatingChatView.swift; sourceTree = "<group>"; };
+		048FDFDE285978F5001C7452 /* FeedBackHSRatingChatView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackHSRatingChatView.xib; sourceTree = "<group>"; };
+		048FDFE0285979D6001C7452 /* FeedBackRatingChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackRatingChatViewModel.swift; sourceTree = "<group>"; };
+		048FDFE228597D75001C7452 /* FeedBackScheduleChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackScheduleChatCell.xib; sourceTree = "<group>"; };
+		048FDFE328597D75001C7452 /* FeedBackScheduleChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleChatCell.swift; sourceTree = "<group>"; };
 		04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHeaderCell.swift; sourceTree = "<group>"; };
 		04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackHeaderCell.xib; sourceTree = "<group>"; };
 		04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleCell.swift; sourceTree = "<group>"; };
@@ -128,6 +138,8 @@
 		04A72BBA28584CD30066F67C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				048FDFE328597D75001C7452 /* FeedBackScheduleChatCell.swift */,
+				048FDFE228597D75001C7452 /* FeedBackScheduleChatCell.xib */,
 				04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */,
 				04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */,
 				04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */,
@@ -182,6 +194,9 @@
 				04F33F1628573C1300DBFC28 /* FeedBackHSView.swift */,
 				04F33F1728573C1300DBFC28 /* FeedBackHSView.xib */,
 				04AEE8112859460800E5B94D /* FeedBackViewModel.swift */,
+				048FDFDA28597871001C7452 /* FeedBackHSRatingChatView.swift */,
+				048FDFDE285978F5001C7452 /* FeedBackHSRatingChatView.xib */,
+				048FDFE0285979D6001C7452 /* FeedBackRatingChatViewModel.swift */,
 			);
 			path = "BU-Prodia";
 			sourceTree = "<group>";
@@ -343,9 +358,11 @@
 				04F33EF0285739A700DBFC28 /* Assets.xcassets in Resources */,
 				04F33F1928573C1300DBFC28 /* FeedBackHSView.xib in Resources */,
 				04F33EEE285739A400DBFC28 /* Main.storyboard in Resources */,
+				048FDFE428597D75001C7452 /* FeedBackScheduleChatCell.xib in Resources */,
 				04B478292858DB7E0089575D /* FeedBackActionCell.xib in Resources */,
 				04B478252858D28A0089575D /* FeedBackHeaderAdviceCell.xib in Resources */,
 				048FDFD928596DB1001C7452 /* FeedBackMessageCell.xib in Resources */,
+				048FDFDF285978F5001C7452 /* FeedBackHSRatingChatView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,14 +494,17 @@
 				04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */,
 				048FDFD828596DB1001C7452 /* FeedBackMessageCell.swift in Sources */,
 				04F33EE7285739A400DBFC28 /* AppDelegate.swift in Sources */,
+				048FDFE528597D75001C7452 /* FeedBackScheduleChatCell.swift in Sources */,
 				04B478242858D28A0089575D /* FeedBackHeaderAdviceCell.swift in Sources */,
 				04F33F1828573C1300DBFC28 /* FeedBackHSView.swift in Sources */,
 				04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */,
 				04A72BC528586C4E0066F67C /* FeedBackStarCell.swift in Sources */,
+				048FDFE1285979D6001C7452 /* FeedBackRatingChatViewModel.swift in Sources */,
 				04AEE81528594FE000E5B94D /* FeedBackAdviceCell.swift in Sources */,
 				04AEE8122859460800E5B94D /* FeedBackViewModel.swift in Sources */,
 				04B478282858DB7E0089575D /* FeedBackActionCell.swift in Sources */,
 				04F33EE9285739A400DBFC28 /* SceneDelegate.swift in Sources */,
+				048FDFDC28597871001C7452 /* FeedBackHSRatingChatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
