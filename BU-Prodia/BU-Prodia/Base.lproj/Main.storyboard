@@ -49,7 +49,6 @@
                                             <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="btn2Act:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cG9-6C-f2q"/>
                                             <action selector="btn3Act:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aho-tx-rtv"/>
                                         </connections>
                                     </button>
