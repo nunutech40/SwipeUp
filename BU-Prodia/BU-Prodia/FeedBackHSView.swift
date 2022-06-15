@@ -14,8 +14,6 @@ class FeedBackHSView: UIViewController {
     @IBOutlet weak var closeBtn: UIImageView!
     @IBOutlet weak var heightViewPopUp: NSLayoutConstraint!
     @IBOutlet weak var popView: UIView!
-    
-    @IBOutlet weak var tableHeight: NSLayoutConstraint!
     private var heightFrame = 0.0
     private var sections = [FeedBackViewModel.Section]()
     
@@ -25,7 +23,7 @@ class FeedBackHSView: UIViewController {
         
         let screenSize: CGRect = UIScreen.main.bounds
         self.heightFrame = screenSize.height
-        print("cek constraint tableheight: \(self.tableHeight.constant)")
+        print("cek constraint tableheight: \(self.tableView.frame.height)")
     }
     
     func setupView() {
@@ -50,17 +48,16 @@ class FeedBackHSView: UIViewController {
         tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
         tableView.register(UINib(nibName: "FeedBackHeaderAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderAdviceCell")
         tableView.register(UINib(nibName: "FeedBackAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackAdviceCell")
+        tableView.register(UINib(nibName: "FeedBackMessageCell", bundle: nil), forCellReuseIdentifier: "FeedBackMessageCell")
         tableView.register(UINib(nibName: "FeedBackActionCell", bundle: nil), forCellReuseIdentifier: "FeedBackActionCell")
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        tableView.backgroundColor = UIColor.blue
-        self.popView.backgroundColor = UIColor.green
-        self.view.backgroundColor = UIColor.red
+        
         self.configureDisplayData(swipe: "default")
+        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.rowHeight             = UITableView.automaticDimension
-        tableView.estimatedRowHeight    = 100
         tableView.separatorStyle    = .none
         self.tableView.isScrollEnabled = false
         
@@ -75,12 +72,14 @@ class FeedBackHSView: UIViewController {
         if swipe == "up" {
             sections.append(.headerAdvice)
             sections.append(.advice)
-            self.tableHeight.constant = self.heightFrame
+            sections.append(.message)
         } else {
             if swipe == "down" {
-                self.sections.remove(at: 3)
-                self.sections.remove(at: 4)
-                self.tableHeight.constant = 475
+                if self.sections.count > 4 {
+                    self.sections.remove(at: 3)
+                    self.sections.remove(at: 4)
+                    self.sections.remove(at: 5)
+                }
             }
         }
         sections.append(.action)
@@ -89,6 +88,7 @@ class FeedBackHSView: UIViewController {
     }
     
     func afterSwipe(_ swipe: String) {
+        
         let getHeightFrame = self.heightFrame - 120
         
         UIView.animate(
@@ -181,6 +181,10 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackAdviceCell", for: indexPath) as! FeedBackAdviceCell
             cell.configuration()
             return cell
+        case .message:
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackMessageCell", for: indexPath) as! FeedBackMessageCell
+            cell.configuration()
+            return cell
         case .action:
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackActionCell", for: indexPath) as! FeedBackActionCell
             cell.configuration()
@@ -188,5 +192,5 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
         
         }
     }
-   
+    
 }

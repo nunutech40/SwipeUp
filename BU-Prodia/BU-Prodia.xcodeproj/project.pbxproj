@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048FDFD828596DB1001C7452 /* FeedBackMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFD628596DB1001C7452 /* FeedBackMessageCell.swift */; };
+		048FDFD928596DB1001C7452 /* FeedBackMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFD728596DB1001C7452 /* FeedBackMessageCell.xib */; };
 		04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */; };
 		04A72BBE28584CF70066F67C /* FeedBackHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */; };
 		04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		042342732F0639E54455ECE6 /* Pods-BU-Prodia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BU-Prodia.debug.xcconfig"; path = "Target Support Files/Pods-BU-Prodia/Pods-BU-Prodia.debug.xcconfig"; sourceTree = "<group>"; };
+		048FDFD628596DB1001C7452 /* FeedBackMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackMessageCell.swift; sourceTree = "<group>"; };
+		048FDFD728596DB1001C7452 /* FeedBackMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackMessageCell.xib; sourceTree = "<group>"; };
 		04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHeaderCell.swift; sourceTree = "<group>"; };
 		04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackHeaderCell.xib; sourceTree = "<group>"; };
 		04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleCell.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				04B478272858DB7E0089575D /* FeedBackActionCell.xib */,
 				04AEE81328594FE000E5B94D /* FeedBackAdviceCell.swift */,
 				04AEE81428594FE000E5B94D /* FeedBackAdviceCell.xib */,
+				048FDFD628596DB1001C7452 /* FeedBackMessageCell.swift */,
+				048FDFD728596DB1001C7452 /* FeedBackMessageCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 				04F33EEE285739A400DBFC28 /* Main.storyboard in Resources */,
 				04B478292858DB7E0089575D /* FeedBackActionCell.xib in Resources */,
 				04B478252858D28A0089575D /* FeedBackHeaderAdviceCell.xib in Resources */,
+				048FDFD928596DB1001C7452 /* FeedBackMessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +475,7 @@
 			files = (
 				04F33EEB285739A400DBFC28 /* ViewController.swift in Sources */,
 				04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */,
+				048FDFD828596DB1001C7452 /* FeedBackMessageCell.swift in Sources */,
 				04F33EE7285739A400DBFC28 /* AppDelegate.swift in Sources */,
 				04B478242858D28A0089575D /* FeedBackHeaderAdviceCell.swift in Sources */,
 				04F33F1828573C1300DBFC28 /* FeedBackHSView.swift in Sources */,

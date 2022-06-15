@@ -14,7 +14,6 @@
                 <outlet property="heightViewPopUp" destination="aCM-1j-kAa" id="T5d-pC-wWV"/>
                 <outlet property="popView" destination="Ai1-Ns-MLB" id="BKX-pV-g3U"/>
                 <outlet property="swipeUpBtn" destination="Zbr-S6-o6e" id="QJe-lw-pX9"/>
-                <outlet property="tableHeight" destination="8lS-Rz-Hxf" id="QOy-xA-h2G"/>
                 <outlet property="tableView" destination="ExW-hG-jnG" id="5Dy-l3-xit"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -47,9 +46,6 @@
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ExW-hG-jnG">
                             <rect key="frame" x="0.0" y="20" width="414" height="475"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="475" id="8lS-Rz-Hxf"/>
-                            </constraints>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
