@@ -7,19 +7,18 @@
 
 import UIKit
 
-class FeedBackHSView: UIViewController {
+class FeedBackHSRatingOveralView: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var swipeUpBtn: UIButton!
     @IBOutlet weak var heightViewPopUp: NSLayoutConstraint!
     @IBOutlet weak var popView: UIView!
     private var heightFrame = 0.0
-    private var sections = [FeedBackViewModel.Section]()
+    private var sections = [FeedBackRatingOveralViewModel.Section]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
         let screenSize: CGRect = UIScreen.main.bounds
         self.heightFrame = screenSize.height
     }
@@ -39,7 +38,7 @@ class FeedBackHSView: UIViewController {
         self.popView.addGestureRecognizer(bottomRecognizer)
         
         tableView.register(UINib(nibName: "FeedBackHeaderCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderCell")
-        tableView.register(UINib(nibName: "FeedBackScheduleCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleCell")
+        tableView.register(UINib(nibName: "FeedBackScheduleRatingOveralCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleRatingOveralCell")
         tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
         tableView.register(UINib(nibName: "FeedBackHeaderAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderAdviceCell")
         tableView.register(UINib(nibName: "FeedBackAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackAdviceCell")
@@ -51,15 +50,15 @@ class FeedBackHSView: UIViewController {
         
         self.configureDisplayData(swipe: "default")
         
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.rowHeight             = UITableView.automaticDimension
-        tableView.separatorStyle    = .none
+        self.tableView.translatesAutoresizingMaskIntoConstraints = false
+        self.tableView.rowHeight             = UITableView.automaticDimension
+        self.tableView.separatorStyle    = .none
         self.tableView.isScrollEnabled = false
         
     }
     
     private func configureDisplayData(swipe: String) {
-        var sections = [FeedBackViewModel.Section]()
+        var sections = [FeedBackRatingOveralViewModel.Section]()
         sections.append(.header)
         sections.append(.schedule)
         sections.append(.star)
@@ -139,7 +138,7 @@ class FeedBackHSView: UIViewController {
     }
 }
 
-extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
+extension FeedBackHSRatingOveralView: UITableViewDelegate, UITableViewDataSource {
     
    func numberOfSections(in tableView: UITableView) -> Int {
        return self.sections.count
@@ -152,13 +151,12 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch sections[indexPath.section] {
-            
         case .header:
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderCell", for: indexPath) as! FeedBackHeaderCell
             cell.configuration()
             return cell
         case .schedule:
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleCell", for: indexPath) as! FeedBackScheduleCell
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackScheduleRatingOveralCell", for: indexPath) as! FeedBackScheduleRatingOveralCell
             cell.configuration()
             return cell
         case .star:
@@ -181,7 +179,6 @@ extension FeedBackHSView: UITableViewDelegate, UITableViewDataSource {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackActionCell", for: indexPath) as! FeedBackActionCell
             cell.configuration()
             return cell
-        
         }
     }
     

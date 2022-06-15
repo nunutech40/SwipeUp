@@ -14,6 +14,11 @@
 		048FDFE1285979D6001C7452 /* FeedBackRatingChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFE0285979D6001C7452 /* FeedBackRatingChatViewModel.swift */; };
 		048FDFE428597D75001C7452 /* FeedBackScheduleChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFE228597D75001C7452 /* FeedBackScheduleChatCell.xib */; };
 		048FDFE528597D75001C7452 /* FeedBackScheduleChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFE328597D75001C7452 /* FeedBackScheduleChatCell.swift */; };
+		048FDFE8285982B7001C7452 /* FeedBackHSRatingOveralView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFE6285982B7001C7452 /* FeedBackHSRatingOveralView.xib */; };
+		048FDFE9285982B7001C7452 /* FeedBackHSRatingOveralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFE7285982B7001C7452 /* FeedBackHSRatingOveralView.swift */; };
+		048FDFEB28598499001C7452 /* FeedBackRatingOveralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFEA28598499001C7452 /* FeedBackRatingOveralViewModel.swift */; };
+		048FDFEE285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFEC285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib */; };
+		048FDFEF285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFED285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift */; };
 		04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */; };
 		04A72BBE28584CF70066F67C /* FeedBackHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */; };
 		04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */; };
@@ -69,6 +74,11 @@
 		048FDFE0285979D6001C7452 /* FeedBackRatingChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackRatingChatViewModel.swift; sourceTree = "<group>"; };
 		048FDFE228597D75001C7452 /* FeedBackScheduleChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackScheduleChatCell.xib; sourceTree = "<group>"; };
 		048FDFE328597D75001C7452 /* FeedBackScheduleChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleChatCell.swift; sourceTree = "<group>"; };
+		048FDFE6285982B7001C7452 /* FeedBackHSRatingOveralView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackHSRatingOveralView.xib; sourceTree = "<group>"; };
+		048FDFE7285982B7001C7452 /* FeedBackHSRatingOveralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackHSRatingOveralView.swift; sourceTree = "<group>"; };
+		048FDFEA28598499001C7452 /* FeedBackRatingOveralViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackRatingOveralViewModel.swift; sourceTree = "<group>"; };
+		048FDFEC285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackScheduleRatingOveralCell.xib; sourceTree = "<group>"; };
+		048FDFED285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleRatingOveralCell.swift; sourceTree = "<group>"; };
 		04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHeaderCell.swift; sourceTree = "<group>"; };
 		04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackHeaderCell.xib; sourceTree = "<group>"; };
 		04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleCell.swift; sourceTree = "<group>"; };
@@ -138,6 +148,8 @@
 		04A72BBA28584CD30066F67C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				048FDFED285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift */,
+				048FDFEC285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib */,
 				048FDFE328597D75001C7452 /* FeedBackScheduleChatCell.swift */,
 				048FDFE228597D75001C7452 /* FeedBackScheduleChatCell.xib */,
 				04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */,
@@ -191,11 +203,14 @@
 				04F33EEF285739A700DBFC28 /* Assets.xcassets */,
 				04F33EF1285739A700DBFC28 /* LaunchScreen.storyboard */,
 				04F33EF4285739A700DBFC28 /* Info.plist */,
+				048FDFE7285982B7001C7452 /* FeedBackHSRatingOveralView.swift */,
+				048FDFE6285982B7001C7452 /* FeedBackHSRatingOveralView.xib */,
 				04F33F1628573C1300DBFC28 /* FeedBackHSView.swift */,
 				04F33F1728573C1300DBFC28 /* FeedBackHSView.xib */,
-				04AEE8112859460800E5B94D /* FeedBackViewModel.swift */,
 				048FDFDA28597871001C7452 /* FeedBackHSRatingChatView.swift */,
 				048FDFDE285978F5001C7452 /* FeedBackHSRatingChatView.xib */,
+				04AEE8112859460800E5B94D /* FeedBackViewModel.swift */,
+				048FDFEA28598499001C7452 /* FeedBackRatingOveralViewModel.swift */,
 				048FDFE0285979D6001C7452 /* FeedBackRatingChatViewModel.swift */,
 			);
 			path = "BU-Prodia";
@@ -352,12 +367,14 @@
 			files = (
 				04AEE81628594FE000E5B94D /* FeedBackAdviceCell.xib in Resources */,
 				04F33EF3285739A700DBFC28 /* LaunchScreen.storyboard in Resources */,
+				048FDFEE285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib in Resources */,
 				04A72BC2285865330066F67C /* FeedBackScheduleCell.xib in Resources */,
 				04A72BC628586C4E0066F67C /* FeedBackStarCell.xib in Resources */,
 				04A72BBE28584CF70066F67C /* FeedBackHeaderCell.xib in Resources */,
 				04F33EF0285739A700DBFC28 /* Assets.xcassets in Resources */,
 				04F33F1928573C1300DBFC28 /* FeedBackHSView.xib in Resources */,
 				04F33EEE285739A400DBFC28 /* Main.storyboard in Resources */,
+				048FDFE8285982B7001C7452 /* FeedBackHSRatingOveralView.xib in Resources */,
 				048FDFE428597D75001C7452 /* FeedBackScheduleChatCell.xib in Resources */,
 				04B478292858DB7E0089575D /* FeedBackActionCell.xib in Resources */,
 				04B478252858D28A0089575D /* FeedBackHeaderAdviceCell.xib in Resources */,
@@ -491,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F33EEB285739A400DBFC28 /* ViewController.swift in Sources */,
+				048FDFEF285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift in Sources */,
 				04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */,
 				048FDFD828596DB1001C7452 /* FeedBackMessageCell.swift in Sources */,
 				04F33EE7285739A400DBFC28 /* AppDelegate.swift in Sources */,
@@ -498,6 +516,7 @@
 				04B478242858D28A0089575D /* FeedBackHeaderAdviceCell.swift in Sources */,
 				04F33F1828573C1300DBFC28 /* FeedBackHSView.swift in Sources */,
 				04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */,
+				048FDFE9285982B7001C7452 /* FeedBackHSRatingOveralView.swift in Sources */,
 				04A72BC528586C4E0066F67C /* FeedBackStarCell.swift in Sources */,
 				048FDFE1285979D6001C7452 /* FeedBackRatingChatViewModel.swift in Sources */,
 				04AEE81528594FE000E5B94D /* FeedBackAdviceCell.swift in Sources */,
@@ -505,6 +524,7 @@
 				04B478282858DB7E0089575D /* FeedBackActionCell.swift in Sources */,
 				04F33EE9285739A400DBFC28 /* SceneDelegate.swift in Sources */,
 				048FDFDC28597871001C7452 /* FeedBackHSRatingChatView.swift in Sources */,
+				048FDFEB28598499001C7452 /* FeedBackRatingOveralViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

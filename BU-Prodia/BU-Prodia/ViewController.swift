@@ -29,5 +29,14 @@ class ViewController: UIViewController {
         self.present(info, animated: true)
         
     }
+    
+    @IBAction func btn3Act(_ sender: Any) {
+        
+        let info = FeedBackHSRatingOveralView()
+        info.modalPresentationStyle = .overCurrentContext
+        self.present(info, animated: true)
+        
+    }
+    
 }
 

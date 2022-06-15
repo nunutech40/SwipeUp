@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="3Gw-cN-rNk">
-                                <rect key="frame" x="16" y="144" width="382" height="85"/>
+                                <rect key="frame" x="16" y="144" width="382" height="139"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9Y-So-xZZ">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="31"/>
@@ -39,6 +39,18 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="btn2Act:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SzT-8R-zbv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-LP-52V">
+                                        <rect key="frame" x="0.0" y="108" width="382" height="31"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btn2Act:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cG9-6C-f2q"/>
+                                            <action selector="btn3Act:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aho-tx-rtv"/>
                                         </connections>
                                     </button>
                                 </subviews>
