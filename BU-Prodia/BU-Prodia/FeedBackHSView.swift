@@ -15,6 +15,7 @@ class FeedBackHSView: UIViewController {
     @IBOutlet weak var heightViewPopUp: NSLayoutConstraint!
     @IBOutlet weak var popView: UIView!
     
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
     private var heightFrame = 0.0
     private var sections = [FeedBackViewModel.Section]()
     
@@ -24,6 +25,7 @@ class FeedBackHSView: UIViewController {
         
         let screenSize: CGRect = UIScreen.main.bounds
         self.heightFrame = screenSize.height
+        print("cek constraint tableheight: \(self.tableHeight.constant)")
     }
     
     func setupView() {
@@ -52,6 +54,9 @@ class FeedBackHSView: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        tableView.backgroundColor = UIColor.blue
+        self.popView.backgroundColor = UIColor.green
+        self.view.backgroundColor = UIColor.red
         self.configureDisplayData(swipe: "default")
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.rowHeight             = UITableView.automaticDimension
@@ -70,10 +75,12 @@ class FeedBackHSView: UIViewController {
         if swipe == "up" {
             sections.append(.headerAdvice)
             sections.append(.advice)
+            self.tableHeight.constant = self.heightFrame
         } else {
             if swipe == "down" {
                 self.sections.remove(at: 3)
                 self.sections.remove(at: 4)
+                self.tableHeight.constant = 475
             }
         }
         sections.append(.action)
