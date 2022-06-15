@@ -93,7 +93,7 @@ class FeedBackHSView: UIViewController {
                     self.tableView.isScrollEnabled = true
                     self.configureDisplayData(swipe: "up")
                 } else {
-                    self.heightViewPopUp.constant = 511
+                    self.heightViewPopUp.constant = 495
                     self.tableView.isScrollEnabled = false
                     self.configureDisplayData(swipe: "down")
                 }

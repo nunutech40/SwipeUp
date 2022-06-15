@@ -37,7 +37,7 @@ class FeedBackHSRatingOveralView: UIViewController {
         self.popView.addGestureRecognizer(topRecognizer)
         self.popView.addGestureRecognizer(bottomRecognizer)
         
-        tableView.register(UINib(nibName: "FeedBackHeaderCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderCell")
+        tableView.register(UINib(nibName: "FeedBackHeaderRatingOveralCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderRatingOveralCell")
         tableView.register(UINib(nibName: "FeedBackScheduleRatingOveralCell", bundle: nil), forCellReuseIdentifier: "FeedBackScheduleRatingOveralCell")
         tableView.register(UINib(nibName: "FeedBackStarCell", bundle: nil), forCellReuseIdentifier: "FeedBackStarCell")
         tableView.register(UINib(nibName: "FeedBackHeaderAdviceCell", bundle: nil), forCellReuseIdentifier: "FeedBackHeaderAdviceCell")
@@ -92,7 +92,7 @@ class FeedBackHSRatingOveralView: UIViewController {
                     self.tableView.isScrollEnabled = true
                     self.configureDisplayData(swipe: "up")
                 } else {
-                    self.heightViewPopUp.constant = 511
+                    self.heightViewPopUp.constant = 630
                     self.tableView.isScrollEnabled = false
                     self.configureDisplayData(swipe: "down")
                 }
@@ -152,7 +152,7 @@ extension FeedBackHSRatingOveralView: UITableViewDelegate, UITableViewDataSource
         
         switch sections[indexPath.section] {
         case .header:
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderCell", for: indexPath) as! FeedBackHeaderCell
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "FeedBackHeaderRatingOveralCell", for: indexPath) as! FeedBackHeaderRatingOveralCell
             cell.configuration()
             return cell
         case .schedule:

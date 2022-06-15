@@ -19,6 +19,8 @@
 		048FDFEB28598499001C7452 /* FeedBackRatingOveralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFEA28598499001C7452 /* FeedBackRatingOveralViewModel.swift */; };
 		048FDFEE285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048FDFEC285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib */; };
 		048FDFEF285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDFED285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift */; };
+		04A4C4A9285990E10001587C /* FeedBackHeaderRatingOveralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4C4A7285990E10001587C /* FeedBackHeaderRatingOveralCell.swift */; };
+		04A4C4AA285990E10001587C /* FeedBackHeaderRatingOveralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A4C4A8285990E10001587C /* FeedBackHeaderRatingOveralCell.xib */; };
 		04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */; };
 		04A72BBE28584CF70066F67C /* FeedBackHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */; };
 		04A72BC1285865330066F67C /* FeedBackScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */; };
@@ -79,6 +81,8 @@
 		048FDFEA28598499001C7452 /* FeedBackRatingOveralViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackRatingOveralViewModel.swift; sourceTree = "<group>"; };
 		048FDFEC285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackScheduleRatingOveralCell.xib; sourceTree = "<group>"; };
 		048FDFED285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleRatingOveralCell.swift; sourceTree = "<group>"; };
+		04A4C4A7285990E10001587C /* FeedBackHeaderRatingOveralCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedBackHeaderRatingOveralCell.swift; sourceTree = "<group>"; };
+		04A4C4A8285990E10001587C /* FeedBackHeaderRatingOveralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedBackHeaderRatingOveralCell.xib; sourceTree = "<group>"; };
 		04A72BBB28584CF70066F67C /* FeedBackHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHeaderCell.swift; sourceTree = "<group>"; };
 		04A72BBC28584CF70066F67C /* FeedBackHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackHeaderCell.xib; sourceTree = "<group>"; };
 		04A72BBF285865330066F67C /* FeedBackScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackScheduleCell.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 		04A72BBA28584CD30066F67C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				04A4C4A7285990E10001587C /* FeedBackHeaderRatingOveralCell.swift */,
+				04A4C4A8285990E10001587C /* FeedBackHeaderRatingOveralCell.xib */,
 				048FDFED285986C8001C7452 /* FeedBackScheduleRatingOveralCell.swift */,
 				048FDFEC285986C8001C7452 /* FeedBackScheduleRatingOveralCell.xib */,
 				048FDFE328597D75001C7452 /* FeedBackScheduleChatCell.swift */,
@@ -376,6 +382,7 @@
 				04F33EEE285739A400DBFC28 /* Main.storyboard in Resources */,
 				048FDFE8285982B7001C7452 /* FeedBackHSRatingOveralView.xib in Resources */,
 				048FDFE428597D75001C7452 /* FeedBackScheduleChatCell.xib in Resources */,
+				04A4C4AA285990E10001587C /* FeedBackHeaderRatingOveralCell.xib in Resources */,
 				04B478292858DB7E0089575D /* FeedBackActionCell.xib in Resources */,
 				04B478252858D28A0089575D /* FeedBackHeaderAdviceCell.xib in Resources */,
 				048FDFD928596DB1001C7452 /* FeedBackMessageCell.xib in Resources */,
@@ -517,6 +524,7 @@
 				04F33F1828573C1300DBFC28 /* FeedBackHSView.swift in Sources */,
 				04A72BBD28584CF70066F67C /* FeedBackHeaderCell.swift in Sources */,
 				048FDFE9285982B7001C7452 /* FeedBackHSRatingOveralView.swift in Sources */,
+				04A4C4A9285990E10001587C /* FeedBackHeaderRatingOveralCell.swift in Sources */,
 				04A72BC528586C4E0066F67C /* FeedBackStarCell.swift in Sources */,
 				048FDFE1285979D6001C7452 /* FeedBackRatingChatViewModel.swift in Sources */,
 				04AEE81528594FE000E5B94D /* FeedBackAdviceCell.swift in Sources */,
