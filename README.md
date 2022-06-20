@@ -2,15 +2,15 @@
 
 This is feauture for pop up with swipe up.
 
--- I create a ViewController for poping up, when i click an action.
+- I create a ViewController for poping up, when i click an action.
 
 <img width="809" alt="Screenshot 2022-06-20 at 4 30 09 PM" src="https://user-images.githubusercontent.com/49187517/174571675-e0410039-6a78-4200-874e-e362dfa14074.png">
 
--- Then, i add view with half height from the full screen.
+- Then, i add view with half height from the full screen.
 
 <img width="247" alt="Screenshot 2022-06-20 at 4 32 57 PM" src="https://user-images.githubusercontent.com/49187517/174572254-73e04f56-c6ce-4c17-add0-96ad2f894e01.png">
 
--- Then this is what make the view can swipe up.
+- Then this is what make the view can swipe up.
 
 ```swift
 func afterSwipe(_ swipe: String) {
@@ -67,4 +67,14 @@ func afterSwipe(_ swipe: String) {
         }
         
     }
+```
+
+Tara... now you have an ViewController for pop up!
+
+Use this for call your pop up
+
+```swift
+let popup = FeedBackHSView()
+popup.modalPresentationStyle = .overCurrentContext
+self.present(popup, animated: true)
 ```
