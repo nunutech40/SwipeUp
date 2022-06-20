@@ -1,5 +1,5 @@
 # SwipeUp
-This is feauture for pop up with swipe up.
+This is feature for pop up with swipe up.
 
 ![bSGCtp_a96f0b50aa9c10ba24a37502d6eb1436_00-00-00_00-00-05_2](https://user-images.githubusercontent.com/49187517/174574731-acb5a7a5-2e38-415a-9681-9ec7207628bf.gif)
 
