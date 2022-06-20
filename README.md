@@ -83,3 +83,9 @@ let popup = FeedBackHSView()
 popup.modalPresentationStyle = .overCurrentContext
 self.present(popup, animated: true)
 ```
+
+# How to run this pop up on youmac.
+
+- install xCode from appstore
+- git clone https://github.com/nunutech40/SwipeUp.git in your directory
+- open BU-Prodia.xcworkspace and run
