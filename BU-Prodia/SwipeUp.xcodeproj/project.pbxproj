@@ -96,7 +96,7 @@
 		04B478232858D28A0089575D /* FeedBackHeaderAdviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackHeaderAdviceCell.xib; sourceTree = "<group>"; };
 		04B478262858DB7E0089575D /* FeedBackActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackActionCell.swift; sourceTree = "<group>"; };
 		04B478272858DB7E0089575D /* FeedBackActionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackActionCell.xib; sourceTree = "<group>"; };
-		04F33EE3285739A400DBFC28 /* BU-Prodia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BU-Prodia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F33EE3285739A400DBFC28 /* SwipeUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F33EE6285739A400DBFC28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F33EE8285739A400DBFC28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04F33EEA285739A400DBFC28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,9 +104,9 @@
 		04F33EEF285739A700DBFC28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F33EF2285739A700DBFC28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F33EF4285739A700DBFC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04F33EF9285739A700DBFC28 /* BU-ProdiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BU-ProdiaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F33EF9285739A700DBFC28 /* SwipeUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F33EFD285739A700DBFC28 /* BU_ProdiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BU_ProdiaTests.swift; sourceTree = "<group>"; };
-		04F33F03285739A800DBFC28 /* BU-ProdiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BU-ProdiaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F33F03285739A800DBFC28 /* SwipeUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F33F07285739A800DBFC28 /* BU_ProdiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BU_ProdiaUITests.swift; sourceTree = "<group>"; };
 		04F33F09285739A800DBFC28 /* BU_ProdiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BU_ProdiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04F33F1628573C1300DBFC28 /* FeedBackHSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackHSView.swift; sourceTree = "<group>"; };
@@ -191,9 +191,9 @@
 		04F33EE4285739A400DBFC28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04F33EE3285739A400DBFC28 /* BU-Prodia.app */,
-				04F33EF9285739A700DBFC28 /* BU-ProdiaTests.xctest */,
-				04F33F03285739A800DBFC28 /* BU-ProdiaUITests.xctest */,
+				04F33EE3285739A400DBFC28 /* SwipeUp.app */,
+				04F33EF9285739A700DBFC28 /* SwipeUpTests.xctest */,
+				04F33F03285739A800DBFC28 /* SwipeUpUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,9 +265,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04F33EE2285739A400DBFC28 /* BU-Prodia */ = {
+		04F33EE2285739A400DBFC28 /* SwipeUp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04F33F0D285739A800DBFC28 /* Build configuration list for PBXNativeTarget "BU-Prodia" */;
+			buildConfigurationList = 04F33F0D285739A800DBFC28 /* Build configuration list for PBXNativeTarget "SwipeUp" */;
 			buildPhases = (
 				BB56B0D5C154C4D114C1E42E /* [CP] Check Pods Manifest.lock */,
 				04F33EDF285739A400DBFC28 /* Sources */,
@@ -279,14 +279,14 @@
 			);
 			dependencies = (
 			);
-			name = "BU-Prodia";
+			name = SwipeUp;
 			productName = "BU-Prodia";
-			productReference = 04F33EE3285739A400DBFC28 /* BU-Prodia.app */;
+			productReference = 04F33EE3285739A400DBFC28 /* SwipeUp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04F33EF8285739A700DBFC28 /* BU-ProdiaTests */ = {
+		04F33EF8285739A700DBFC28 /* SwipeUpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04F33F10285739A800DBFC28 /* Build configuration list for PBXNativeTarget "BU-ProdiaTests" */;
+			buildConfigurationList = 04F33F10285739A800DBFC28 /* Build configuration list for PBXNativeTarget "SwipeUpTests" */;
 			buildPhases = (
 				042085BCDAE4E3030FBE17BE /* [CP] Check Pods Manifest.lock */,
 				04F33EF5285739A700DBFC28 /* Sources */,
@@ -298,14 +298,14 @@
 			dependencies = (
 				04F33EFB285739A700DBFC28 /* PBXTargetDependency */,
 			);
-			name = "BU-ProdiaTests";
+			name = SwipeUpTests;
 			productName = "BU-ProdiaTests";
-			productReference = 04F33EF9285739A700DBFC28 /* BU-ProdiaTests.xctest */;
+			productReference = 04F33EF9285739A700DBFC28 /* SwipeUpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04F33F02285739A800DBFC28 /* BU-ProdiaUITests */ = {
+		04F33F02285739A800DBFC28 /* SwipeUpUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04F33F13285739A800DBFC28 /* Build configuration list for PBXNativeTarget "BU-ProdiaUITests" */;
+			buildConfigurationList = 04F33F13285739A800DBFC28 /* Build configuration list for PBXNativeTarget "SwipeUpUITests" */;
 			buildPhases = (
 				545451E48D30EEF1D3765127 /* [CP] Check Pods Manifest.lock */,
 				04F33EFF285739A800DBFC28 /* Sources */,
@@ -318,9 +318,9 @@
 			dependencies = (
 				04F33F05285739A800DBFC28 /* PBXTargetDependency */,
 			);
-			name = "BU-ProdiaUITests";
+			name = SwipeUpUITests;
 			productName = "BU-ProdiaUITests";
-			productReference = 04F33F03285739A800DBFC28 /* BU-ProdiaUITests.xctest */;
+			productReference = 04F33F03285739A800DBFC28 /* SwipeUpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -346,7 +346,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04F33EDE285739A400DBFC28 /* Build configuration list for PBXProject "BU-Prodia" */;
+			buildConfigurationList = 04F33EDE285739A400DBFC28 /* Build configuration list for PBXProject "SwipeUp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -359,9 +359,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04F33EE2285739A400DBFC28 /* BU-Prodia */,
-				04F33EF8285739A700DBFC28 /* BU-ProdiaTests */,
-				04F33F02285739A800DBFC28 /* BU-ProdiaUITests */,
+				04F33EE2285739A400DBFC28 /* SwipeUp */,
+				04F33EF8285739A700DBFC28 /* SwipeUpTests */,
+				04F33F02285739A800DBFC28 /* SwipeUpUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -558,12 +558,12 @@
 /* Begin PBXTargetDependency section */
 		04F33EFB285739A700DBFC28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04F33EE2285739A400DBFC28 /* BU-Prodia */;
+			target = 04F33EE2285739A400DBFC28 /* SwipeUp */;
 			targetProxy = 04F33EFA285739A700DBFC28 /* PBXContainerItemProxy */;
 		};
 		04F33F05285739A800DBFC28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04F33EE2285739A400DBFC28 /* BU-Prodia */;
+			target = 04F33EE2285739A400DBFC28 /* SwipeUp */;
 			targetProxy = 04F33F04285739A800DBFC28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -784,7 +784,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BU-Prodia.app/BU-Prodia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeUp.app/SwipeUp";
 			};
 			name = Debug;
 		};
@@ -810,7 +810,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BU-Prodia.app/BU-Prodia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeUp.app/SwipeUp";
 			};
 			name = Release;
 		};
@@ -865,7 +865,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04F33EDE285739A400DBFC28 /* Build configuration list for PBXProject "BU-Prodia" */ = {
+		04F33EDE285739A400DBFC28 /* Build configuration list for PBXProject "SwipeUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04F33F0B285739A800DBFC28 /* Debug */,
@@ -874,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04F33F0D285739A800DBFC28 /* Build configuration list for PBXNativeTarget "BU-Prodia" */ = {
+		04F33F0D285739A800DBFC28 /* Build configuration list for PBXNativeTarget "SwipeUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04F33F0E285739A800DBFC28 /* Debug */,
@@ -883,7 +883,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04F33F10285739A800DBFC28 /* Build configuration list for PBXNativeTarget "BU-ProdiaTests" */ = {
+		04F33F10285739A800DBFC28 /* Build configuration list for PBXNativeTarget "SwipeUpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04F33F11285739A800DBFC28 /* Debug */,
@@ -892,7 +892,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04F33F13285739A800DBFC28 /* Build configuration list for PBXNativeTarget "BU-ProdiaUITests" */ = {
+		04F33F13285739A800DBFC28 /* Build configuration list for PBXNativeTarget "SwipeUpUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04F33F14285739A800DBFC28 /* Debug */,
